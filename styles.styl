@@ -1,0 +1,78 @@
+@import colors
+@import base
+
+.header
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 20vh
+  background: url("http://i.imgur.com/4oLt6Pi.jpg")
+  background-position: center
+  background-size: cover
+  color: white
+
+.menu
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+
+.menu__item
+    graduallyDarkenBackground(purple)
+    color: white
+    padding: 10px
+    margin: 10px
+    text-align: center
+    // flex-basis: 0
+
+.players
+  display: flex
+  justify-content: space-around
+
+.player
+  display: flex
+  flex-direction: column
+  background: blue
+  color: white
+  padding: 10px
+  margin: 10px
+  max-width: 300px
+
+.player__img
+  width: 100%
+
+.player__bio
+  flex-grow: 1
+
+.player__more
+  width: 100%
+  background: dark
+  padding: 10px
+  text-align: center
+
+
+.stats
+  display: flex
+  background: blue
+  color: white
+  padding: 10px 0
+  flex-wrap: wrap
+
+.stat
+  padding: 10px 20px
+  text-align: center
+  flex: 1 1 auto
+  margin-left: -3px
+
+  & + &
+    border-left: solid 3px red
+
+.stat__value
+  font-size: 1.5em
+  font-weight: 600
+
+
+
+
+
+
+

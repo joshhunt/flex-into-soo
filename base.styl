@@ -1,0 +1,58 @@
+@import colors
+
+* { box-sizing: border-box }
+
+body
+  margin: 0
+  font-family: 'San Francisco Text'
+  color: dark-alt
+  background: white
+
+
+graduallyDarkenBackground(bg)
+  background: bg
+
+  &:nth-child(1)
+    background: darken(bg, 0%)
+
+  &:nth-child(2)
+    background: darken(bg, 10%)
+
+  &:nth-child(3)
+    background: darken(bg, 20%)
+
+  &:nth-child(4)
+    background: darken(bg, 30%)
+
+  &:nth-child(5)
+    background: darken(bg, 40%)
+
+  &:nth-child(6)
+    background: darken(bg, 50%)
+
+  &:nth-child(7)
+    background: darken(bg, 60%)
+
+  &:nth-child(8)
+    background: darken(bg, 70%)
+
+  &:nth-child(9)
+    background: darken(bg, 80%)
+
+  &:nth-child(10)
+    background: darken(bg, 90%)
+
+  &:nth-child(11)
+    background: darken(bg, 92%)
+
+  &:nth-child(12)
+    background: darken(bg, 94%)
+
+  &:nth-child(14)
+    background: darken(bg, 96%)
+
+  &:nth-child(16)
+    background: darken(bg, 98%)
+
+  &:nth-child(17)
+    background: darken(bg, 100%)
